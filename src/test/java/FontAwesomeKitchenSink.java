@@ -1,5 +1,7 @@
 import com.guicedee.guicedinjection.*;
-import com.jwebmp.core.base.angular.services.annotations.*;
+
+import com.jwebmp.core.base.angular.client.annotations.angular.*;
+import com.jwebmp.core.base.angular.client.services.interfaces.*;
 import com.jwebmp.core.base.angular.services.compiler.*;
 import com.jwebmp.core.base.angular.services.interfaces.*;
 import com.jwebmp.core.base.html.*;
@@ -10,7 +12,8 @@ import org.junit.jupiter.api.*;
 
 import java.io.*;
 
-import static com.jwebmp.core.base.angular.services.interfaces.ITSComponent.*;
+import static com.jwebmp.core.base.angular.client.services.interfaces.AnnotationUtils.*;
+
 
 @NgComponent(value = "fontawesome-kitchen-sink")
 public class FontAwesomeKitchenSink extends DivSimple<FontAwesomeKitchenSink>
@@ -59,7 +62,7 @@ public class FontAwesomeKitchenSink extends DivSimple<FontAwesomeKitchenSink>
 			JWebMPTypeScriptCompiler compiler = new JWebMPTypeScriptCompiler(app);
 			
 			System.out.println("Generating @NgApp (" + getTsFilename(app.getClass()) + ") " +
-			                   "in folder " + getClassDirectory(app.getClass()));
+			                   "in folder " + IComponent.getClassDirectory(app.getClass()));
 			System.out.println("================");
 			//	compiler.renderAppTS(app);
 			System.out.println("================");
