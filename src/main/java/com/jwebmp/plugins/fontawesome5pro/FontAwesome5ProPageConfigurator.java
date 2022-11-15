@@ -52,11 +52,11 @@ import jakarta.validation.constraints.*;
 //@NgBootImportReference(name = "fal", reference = "@fortawesome/pro-light-svg-icons",overrides = true)
 //@NgBootImportReference(name = "fat", reference = "@fortawesome/pro-thin-svg-icons",overrides = true)
 
-@TsDependency(value = "@fortawesome/pro-solid-svg-icons", version = "^6.0.0", name = "fontawesome-svg-solid", overrides = true)
-@TsDependency(value = "@fortawesome/pro-regular-svg-icons", version = "^6.0.0", name = "fontawesome-svg-regular")
-@TsDependency(value = "@fortawesome/pro-light-svg-icons", version = "^6.0.0", name = "fontawesome-svg-light")
-@TsDependency(value = "@fortawesome/pro-duotone-svg-icons", version = "^6.0.0", name = "fontawesome-svg-duotone")
-@TsDependency(value = "@fortawesome/pro-thin-svg-icons", version = "^6.0.0", name = "fontawesome-svg-thin")
+@TsDependency(value = "@fortawesome/pro-solid-svg-icons", version = "^6.1.2", name = "fontawesome-svg-solid", overrides = true)
+@TsDependency(value = "@fortawesome/pro-regular-svg-icons", version = "^6.1.2", name = "fontawesome-svg-regular")
+@TsDependency(value = "@fortawesome/pro-light-svg-icons", version = "^6.1.2", name = "fontawesome-svg-light")
+@TsDependency(value = "@fortawesome/pro-duotone-svg-icons", version = "^6.1.2", name = "fontawesome-svg-duotone")
+@TsDependency(value = "@fortawesome/pro-thin-svg-icons", version = "^6.1.2", name = "fontawesome-svg-thin")
 
 //@NgBootConstructorBody("library.addIconPacks(fad);")
 //@NgBootConstructorBody("library.addIconPacks(fal);")
