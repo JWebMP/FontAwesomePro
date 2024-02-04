@@ -1,7 +1,8 @@
-import com.jwebmp.plugins.fontawesome5pro.*;
+import com.jwebmp.plugins.fontawesome5pro.FontAwesome5ProPageConfigurator;
 
 module com.jwebmp.plugins.fontawesome5pro {
 	requires transitive com.jwebmp.plugins.fontawesome5;
+	requires com.guicedee.jsonrepresentation;
 	
 	exports com.jwebmp.plugins.fontawesome5pro;
 	

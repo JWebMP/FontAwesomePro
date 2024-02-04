@@ -2,7 +2,7 @@ package com.jwebmp.plugins.fontawesome5pro;
 
 import com.jwebmp.plugins.fontawesome5.*;
 
-import static com.guicedee.guicedinjection.json.StaticStrings.*;
+import static com.guicedee.services.jsonrepresentation.json.StaticStrings.*;
 
 public enum FontAwesome5ProIcons implements IFontAwesomeIcon
 {
