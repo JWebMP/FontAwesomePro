@@ -3,51 +3,34 @@
     <modelVersion>4.0.0</modelVersion>
     <parent>
         <groupId>com.jwebmp</groupId>
-        <artifactId>jwebmp-builder</artifactId>
+        <artifactId>parent</artifactId>
         <version>2.0.0-SNAPSHOT</version>
-        <relativePath>../../../../</relativePath>
     </parent>
 
-
-    <groupId>com.jwebmp.plugins.iconsets</groupId>
-    <artifactId>jwebmp-font-awesome5-pro</artifactId>
+    <groupId>com.jwebmp.plugins</groupId>
+    <artifactId>font-awesome-pro</artifactId>
     <packaging>jar</packaging>
     <version>2.0.0-SNAPSHOT</version>
     <name>Font Awesome 5 Pro</name>
     <description>The JWebMP implementation for the Font Awesome 5 Icon Set / Pro</description>
-    <url>https://github.com/GedMarc/JWebMP-FontAwesome5Pro</url>
-
-    <issueManagement>
-        <system>Github</system>
-        <url>https://github.com/GedMarc/JWebMP-FontAwesome5Pro/issues</url>
-    </issueManagement>
-
     <dependencies>
 
         <dependency>
-            <groupId>com.jwebmp.plugins.angular</groupId>
-            <artifactId>angularts</artifactId>
+            <groupId>com.jwebmp.plugins</groupId>
+            <artifactId>typescript-client</artifactId>
         </dependency>
 
         <dependency>
-            <groupId>com.jwebmp.plugins.iconsets</groupId>
-            <artifactId>jwebmp-font-awesome5</artifactId>
+            <groupId>com.jwebmp.plugins</groupId>
+            <artifactId>font-awesome</artifactId>
         </dependency>
 
 
     </dependencies>
-    <scm>
-        <url>https://github.com/GedMarc/JWebMP-FontAwesome5Pro</url>
-    </scm>
-
-    <ciManagement>
-        <system>TeamCity</system>
-        <url>http://jwebmp.com/teamcity</url>
-    </ciManagement>
 
     <properties>
         <ignore.moditect>true</ignore.moditect>
-        <flatten.pom>false</flatten.pom>
+        <project.scm.nameUrl>/JWebMP/Plugins/FontAwesomePro</project.scm.nameUrl>
     </properties>
 
     <dependencyManagement>

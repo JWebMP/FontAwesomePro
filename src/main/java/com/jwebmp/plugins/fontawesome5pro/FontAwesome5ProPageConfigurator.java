@@ -16,8 +16,6 @@
  */
 package com.jwebmp.plugins.fontawesome5pro;
 
-import com.jwebmp.core.*;
-
 import com.jwebmp.core.base.angular.client.annotations.typescript.*;
 import com.jwebmp.core.plugins.*;
 import com.jwebmp.core.services.*;
@@ -65,21 +63,24 @@ import jakarta.validation.constraints.*;
 
 public class FontAwesome5ProPageConfigurator implements IPageConfigurator<FontAwesome5ProPageConfigurator>
 {
-    static {
-        FontAwesome5PageConfigurator.tsDependencies.put(FontAwesomeStyles.Solid,"@fortawesome/pro-solid-svg-icons");
-        FontAwesome5PageConfigurator.tsDependencies.put(FontAwesomeStyles.Brand,"@fortawesome/free-brands-svg-icons");
-        FontAwesome5PageConfigurator.tsDependencies.put(FontAwesomeStyles.Regular,"@fortawesome/pro-regular-svg-icons");
-        FontAwesome5PageConfigurator.tsDependencies.put(FontAwesomeStyles.Duotone,"@fortawesome/pro-duotone-svg-icons");
-        FontAwesome5PageConfigurator.tsDependencies.put(FontAwesomeStyles.Light,"@fortawesome/pro-light-svg-icons");
-        FontAwesome5PageConfigurator.tsDependencies.put(FontAwesomeStyles.Thin,"@fortawesome/pro-thin-svg-icons");
+    static
+    {
+        FontAwesome5PageConfigurator.tsDependencies.put(FontAwesomeStyles.Solid, "@fortawesome/pro-solid-svg-icons");
+        FontAwesome5PageConfigurator.tsDependencies.put(FontAwesomeStyles.Brand, "@fortawesome/free-brands-svg-icons");
+        FontAwesome5PageConfigurator.tsDependencies.put(FontAwesomeStyles.Regular, "@fortawesome/pro-regular-svg-icons");
+        FontAwesome5PageConfigurator.tsDependencies.put(FontAwesomeStyles.Duotone, "@fortawesome/pro-duotone-svg-icons");
+        FontAwesome5PageConfigurator.tsDependencies.put(FontAwesomeStyles.Light, "@fortawesome/pro-light-svg-icons");
+        FontAwesome5PageConfigurator.tsDependencies.put(FontAwesomeStyles.Thin, "@fortawesome/pro-thin-svg-icons");
     }
-    
+
     /**
      * The default page configurator for componenttemplate
      */
-    public FontAwesome5ProPageConfigurator() {
+    public FontAwesome5ProPageConfigurator()
+    {
         //Nothing Needed
     }
+
     /**
      * The 3 meta tags *must* come first in the head; any other head content must come *after* these tags
      * <p>
@@ -90,15 +91,17 @@ public class FontAwesome5ProPageConfigurator implements IPageConfigurator<FontAw
      */
     @NotNull
     @Override
-    public Page<?> configure(Page<?> page) {
+    public IPage<?> configure(IPage<?> page)
+    {
         return page;
     }
 
     @Override
-    public boolean enabled() {
+    public boolean enabled()
+    {
         return true;
     }
-    
+
     @Override
     public Integer sortOrder()
     {
