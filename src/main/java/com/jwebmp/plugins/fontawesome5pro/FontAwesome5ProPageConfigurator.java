@@ -76,6 +76,8 @@ public class FontAwesome5ProPageConfigurator implements IPageConfigurator<FontAw
         FontAwesome5PageConfigurator.tsDependencies.put(FontAwesomeStyles.Thin, "@fortawesome/pro-thin-svg-icons");
     }
 
+    private static String proKey;
+
     /**
      * The default page configurator for componenttemplate
      */
@@ -108,5 +110,15 @@ public class FontAwesome5ProPageConfigurator implements IPageConfigurator<FontAw
     public Integer sortOrder()
     {
         return 50;
+    }
+
+    public static String getProKey()
+    {
+        return proKey;
+    }
+
+    public static void setProKey(String proKey)
+    {
+        FontAwesome5ProPageConfigurator.proKey = proKey;
     }
 }
