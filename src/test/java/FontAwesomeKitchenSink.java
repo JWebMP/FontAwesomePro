@@ -20,7 +20,7 @@ public class FontAwesomeKitchenSink extends DivSimple<FontAwesomeKitchenSink>
         implements INgComponent<FontAwesomeKitchenSink>
 {
     @Override
-    public void init()
+    protected void init()
     {
         add(FontAwesome.icon(FontAwesomeIcons.star));
         add(FontAwesome.icon(FontAwesomeIcons.star, FontAwesomeStyles.Duotone));
@@ -36,17 +36,17 @@ public class FontAwesomeKitchenSink extends DivSimple<FontAwesomeKitchenSink>
 
 
         add(new FontAwesomeLayers()
-                .addIcon(FontAwesome.icon(FontAwesomeBrandIcons.twitch, FontAwesomeStyles.Brand))
-                .addText(new FontAwesomeLayerText().setText("Yo")
-                                                   .transform(FontAwesomeTransforms.Shrink_4))
+                    .addIcon(FontAwesome.icon(FontAwesomeBrandIcons.twitch, FontAwesomeStyles.Brand))
+                    .addText(new FontAwesomeLayerText().setText("Yo")
+                                                       .transform(FontAwesomeTransforms.Shrink_4))
         );
 
         add(new FontAwesomeLayers()
-                .fixedWidth()
-                .setSize(FontAwesomeSizes.Lg)
-                .addIcon(FontAwesome.icon(FontAwesomeBrandIcons.twitch, FontAwesomeStyles.Brand))
-                .addCounter(new FontAwesomeLayerCounter().setText("99+")
-                )
+                    .fixedWidth()
+                    .setSize(FontAwesomeSizes.Lg)
+                    .addIcon(FontAwesome.icon(FontAwesomeBrandIcons.twitch, FontAwesomeStyles.Brand))
+                    .addCounter(new FontAwesomeLayerCounter().setText("99+")
+                    )
         );
 
 
@@ -63,7 +63,7 @@ public class FontAwesomeKitchenSink extends DivSimple<FontAwesomeKitchenSink>
             JWebMPTypeScriptCompiler compiler = new JWebMPTypeScriptCompiler(app);
 
             System.out.println("Generating @NgApp (" + getTsFilename(app.getClass()) + ") " +
-                    "in folder " + IComponent.getClassDirectory(app.getClass()));
+                                       "in folder " + IComponent.getClassDirectory(app.getClass()));
             System.out.println("================");
             //	compiler.renderAppTS(app);
             System.out.println("================");
