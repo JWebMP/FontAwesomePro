@@ -30,19 +30,19 @@ import com.jwebmp.plugins.fontawesome5.options.FontAwesomeStyles;
  * file://
  */
 @PluginInformation(pluginName = "Component Template",
-                   pluginDescription = "ComponentTemplate does only one thing: replace the browser's default scrollbar with a custom CSS-styled one without losing performances. Unlike some popular plugins, ComponentTemplate doesn't mimic scroll with Javascript, causing janks and strange scrolling behaviours... You keep the awesomeness of native scrolling...with a custom scrollbar!\n" +
-                           "ComponentTemplate does NOT implement a custom scroll behaviour. It keeps the native overflow: auto scroll and only replace the scrollbar visual appearance.",
-                   pluginUniqueName = "jwebmp-componenttemplate",
-                   pluginVersion = "5.1.0",
-                   pluginCategories = "componenttemplate,ui,web ui, framework",
-                   pluginSubtitle = "ComponentTemplate makes sidebar development faster and easier.",
-                   pluginSourceUrl = "https://github.com/Grsmto/componenttemplate",
-                   pluginWikiUrl = "https://github.com/GedMarc/JWebMP-FontAwesome5Pro/wiki",
-                   pluginGitUrl = "https://github.com/GedMarc/JWebMP-FontAwesome5Pro",
-                   pluginIconUrl = "bower_components/componenttemplate/componenttemplateicon.jpg",
-                   pluginIconImageUrl = "bower_components/componenttemplate/componenttemplatelogo.jpg",
-                   pluginOriginalHomepage = "https://github.com/Grsmto/componenttemplate",
-                   pluginDownloadUrl = "https://github.com/GedMarc/JWebMP-FontAwesome5Pro")
+        pluginDescription = "ComponentTemplate does only one thing: replace the browser's default scrollbar with a custom CSS-styled one without losing performances. Unlike some popular plugins, ComponentTemplate doesn't mimic scroll with Javascript, causing janks and strange scrolling behaviours... You keep the awesomeness of native scrolling...with a custom scrollbar!\n" +
+                "ComponentTemplate does NOT implement a custom scroll behaviour. It keeps the native overflow: auto scroll and only replace the scrollbar visual appearance.",
+        pluginUniqueName = "jwebmp-componenttemplate",
+        pluginVersion = "5.1.0",
+        pluginCategories = "componenttemplate,ui,web ui, framework",
+        pluginSubtitle = "ComponentTemplate makes sidebar development faster and easier.",
+        pluginSourceUrl = "https://github.com/Grsmto/componenttemplate",
+        pluginWikiUrl = "https://github.com/GedMarc/JWebMP-FontAwesome5Pro/wiki",
+        pluginGitUrl = "https://github.com/GedMarc/JWebMP-FontAwesome5Pro",
+        pluginIconUrl = "bower_components/componenttemplate/componenttemplateicon.jpg",
+        pluginIconImageUrl = "bower_components/componenttemplate/componenttemplatelogo.jpg",
+        pluginOriginalHomepage = "https://github.com/Grsmto/componenttemplate",
+        pluginDownloadUrl = "https://github.com/GedMarc/JWebMP-FontAwesome5Pro")
 
 //@NgBootImportReference(name = "fas", reference = "@fortawesome/pro-solid-svg-icons",overrides = true)
 //@NgBootImportReference(name = "far", reference = "@fortawesome/pro-regular-svg-icons",overrides = true)
@@ -51,13 +51,13 @@ import com.jwebmp.plugins.fontawesome5.options.FontAwesomeStyles;
 //@NgBootImportReference(name = "fat", reference = "@fortawesome/pro-thin-svg-icons",overrides = true)
 
 @TsDependency(value = "@fortawesome/pro-solid-svg-icons",
-              version = "^6.5.2",
-              name = "fontawesome-svg-solid",
-              overrides = true)
-@TsDependency(value = "@fortawesome/pro-regular-svg-icons", version = "^6.5.2", name = "fontawesome-svg-regular")
-@TsDependency(value = "@fortawesome/pro-light-svg-icons", version = "^6.5.2", name = "fontawesome-svg-light")
-@TsDependency(value = "@fortawesome/pro-duotone-svg-icons", version = "^6.5.2", name = "fontawesome-svg-duotone")
-@TsDependency(value = "@fortawesome/pro-thin-svg-icons", version = "^6.5.2", name = "fontawesome-svg-thin")
+        version = "^6.7.2",
+        name = "fontawesome-svg-solid",
+        overrides = true)
+@TsDependency(value = "@fortawesome/pro-regular-svg-icons", version = "^6.7.2", name = "fontawesome-svg-regular")
+@TsDependency(value = "@fortawesome/pro-light-svg-icons", version = "^6.7.2", name = "fontawesome-svg-light")
+@TsDependency(value = "@fortawesome/pro-duotone-svg-icons", version = "^6.7.2", name = "fontawesome-svg-duotone")
+@TsDependency(value = "@fortawesome/pro-thin-svg-icons", version = "^6.7.2", name = "fontawesome-svg-thin")
 
 //@NgBootConstructorBody("library.addIconPacks(fad);")
 //@NgBootConstructorBody("library.addIconPacks(fal);")
