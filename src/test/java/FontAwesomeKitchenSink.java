@@ -28,19 +28,19 @@ public class FontAwesomeKitchenSink extends DivSimple<FontAwesomeKitchenSink>
         add(FontAwesome.icon(FontAwesomeIcons.star, FontAwesomeStyles.Duotone));
         add(FontAwesome.icon(FontAwesomeIcons.star, FontAwesomeSizes.Lg));
         add(FontAwesome.icon(FontAwesomeIcons.star, FontAwesomeSizes.$5x)
-                .spin());
-        add(FontAwesome.icon(FontAwesomeIcons.star, FontAwesomeSizes.$4x, FontAwesomeStyles.Regular)
-                .pullRight());
-        add(FontAwesome.icon(FontAwesomeIcons.star, FontAwesomeSizes.$3x, FontAwesomeStyles.Thin)
-                .border());
-        add(FontAwesome.icon(FontAwesomeIcons.coffee, FontAwesomeSizes.$2x, FontAwesomeStyles.Light)
-                .fixedWidth());
+                       .spin());
+        add(FontAwesome.icon(FontAwesomeIcons.star, FontAwesomeSizes.$4x, FontAwesomeStyles.Filled)
+                       .pullRight());
+        add(FontAwesome.icon(FontAwesomeIcons.star, FontAwesomeSizes.$3x, FontAwesomeStyles.Classic)
+                       .border());
+        add(FontAwesome.icon(FontAwesomeIcons.coffee, FontAwesomeSizes.$2x, FontAwesomeStyles.Duotone)
+                       .fixedWidth());
 
 
         add(new FontAwesomeLayers()
                 .addIcon(FontAwesome.icon(FontAwesomeBrandIcons.twitch, FontAwesomeStyles.Brand))
                 .addText(new FontAwesomeLayerText().setText("Yo")
-                        .transform(FontAwesomeTransforms.Shrink_4))
+                                                   .transform(FontAwesomeTransforms.Shrink_4))
         );
 
         add(new FontAwesomeLayers()
@@ -59,7 +59,7 @@ public class FontAwesomeKitchenSink extends DivSimple<FontAwesomeKitchenSink>
     public void testAppSearch() throws IOException, InterruptedException
     {
         GuiceContext.instance()
-                .inject();
+                    .inject();
 
         FontAwesome5ProPageConfigurator.setProKey("149597AD-E9FB-4ECC-84B7-75CBE795841F");
         for (INgApp<?> app : JWebMPTypeScriptCompiler.getAllApps())

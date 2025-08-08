@@ -68,12 +68,12 @@ public class FontAwesome5ProPageConfigurator implements IPageConfigurator<FontAw
 {
     static
     {
-        FontAwesome5PageConfigurator.tsDependencies.put(FontAwesomeStyles.Solid, "@fortawesome/pro-solid-svg-icons");
-        FontAwesome5PageConfigurator.tsDependencies.put(FontAwesomeStyles.Brand, "@fortawesome/free-brands-svg-icons");
-        FontAwesome5PageConfigurator.tsDependencies.put(FontAwesomeStyles.Regular, "@fortawesome/pro-regular-svg-icons");
+        //   FontAwesome5PageConfigurator.tsDependencies.put(FontAwesomeStyles.Solid, "@fortawesome/pro-solid-svg-icons");
+        //   FontAwesome5PageConfigurator.tsDependencies.put(FontAwesomeStyles.Brand, "@fortawesome/free-brands-svg-icons");
+        //    FontAwesome5PageConfigurator.tsDependencies.put(FontAwesomeStyles.Regular, "@fortawesome/pro-regular-svg-icons");
         FontAwesome5PageConfigurator.tsDependencies.put(FontAwesomeStyles.Duotone, "@fortawesome/pro-duotone-svg-icons");
-        FontAwesome5PageConfigurator.tsDependencies.put(FontAwesomeStyles.Light, "@fortawesome/pro-light-svg-icons");
-        FontAwesome5PageConfigurator.tsDependencies.put(FontAwesomeStyles.Thin, "@fortawesome/pro-thin-svg-icons");
+        //   FontAwesome5PageConfigurator.tsDependencies.put(FontAwesomeStyles.Light, "@fortawesome/pro-light-svg-icons");
+        //    FontAwesome5PageConfigurator.tsDependencies.put(FontAwesomeStyles.Thin, "@fortawesome/pro-thin-svg-icons");
     }
 
     private static String proKey;
