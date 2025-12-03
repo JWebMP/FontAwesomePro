@@ -1,4 +1,4 @@
-import com.guicedee.guicedinjection.interfaces.IGuiceScanModuleInclusions;
+import com.guicedee.client.services.config.IGuiceScanModuleInclusions;
 import com.jwebmp.core.base.angular.services.interfaces.NpmrcConfigurator;
 import com.jwebmp.plugins.fontawesome5pro.FontAwesome5ProPageConfigurator;
 import com.jwebmp.plugins.fontawesome5pro.implementations.FontAwesome5ProModuleInclusion;
