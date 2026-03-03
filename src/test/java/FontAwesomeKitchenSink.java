@@ -62,9 +62,9 @@ public class FontAwesomeKitchenSink extends DivSimple<FontAwesomeKitchenSink>
                     .inject();
 
         FontAwesome5ProPageConfigurator.setProKey("149597AD-E9FB-4ECC-84B7-75CBE795841F");
-        for (INgApp<?> app : JWebMPTypeScriptCompiler.getAllApps())
+        for (INgApp<?> app : TypeScriptCompiler.getAllApps())
         {
-            JWebMPTypeScriptCompiler compiler = new JWebMPTypeScriptCompiler(app);
+            TypeScriptCompiler compiler = new TypeScriptCompiler(app);
 
             System.out.println("Generating @NgApp (" + getTsFilename(app.getClass()) + ") " +
                     "in folder " + IComponent.getClassDirectory(app.getClass()));
