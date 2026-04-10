@@ -12,7 +12,7 @@
 ![Font Awesome Pro](https://img.shields.io/badge/Font%20Awesome%20Pro-6.7.2-528DD7?logo=fontawesome)
 ![JWebMP](https://img.shields.io/badge/JWebMP-2.0-0A7)
 
-Font Awesome Pro icon integration for JWebMP with Angular 20. Extends the Font Awesome Free plugin with Pro-exclusive icon styles: Regular, Light, Duotone, and Thin.
+Font Awesome Pro icon integration for JWebMP with Angular 21. Extends the Font Awesome Free plugin with Pro-exclusive icon styles: Regular, Light, Duotone, and Thin.
 
 Built on [Font Awesome 6 Pro](https://fontawesome.com/) · [Angular FontAwesome](https://github.com/FortAwesome/angular-fontawesome) · [JWebMP Core](https://jwebmp.com/) · JPMS module `com.jwebmp.plugins.fontawesome5pro` · Java 25+
 
@@ -30,7 +30,7 @@ Built on [Font Awesome 6 Pro](https://fontawesome.com/) · [Angular FontAwesome]
 <dependency>
   <groupId>com.jwebmp.plugins</groupId>
   <artifactId>font-awesome-pro</artifactId>
-  <version>2.0.0-SNAPSHOT</version>
+  <version>2.0.0-RC1</version>
 </dependency>
 ```
 
@@ -38,7 +38,7 @@ Built on [Font Awesome 6 Pro](https://fontawesome.com/) · [Angular FontAwesome]
 <summary>Gradle (Kotlin DSL)</summary>
 
 ```kotlin
-implementation("com.jwebmp.plugins:font-awesome-pro:2.0.0-SNAPSHOT")
+implementation("com.jwebmp.plugins:font-awesome-pro:2.0.0-RC1")
 ```
 </details>
 
@@ -91,7 +91,7 @@ The plugin automatically includes Font Awesome Pro dependencies:
 - **Java 25 LTS** (required)
 - **Maven 3.8+**
 - **Node.js 18+** (for frontend builds)
-- **Angular 20+** (auto-integrated via JWebMP)
+- **Angular 21+** (auto-integrated via JWebMP)
 - **Font Awesome Pro License** (required)
 - **Font Awesome Pro Token** (NPM authentication)
 
@@ -152,7 +152,7 @@ FontAwesome5ProPageConfigurator.setProKey("YOUR_PRO_LICENSE_KEY");
 ### Technology Stack
 
 - **Backend**: Java 25 LTS, Maven, GuicedEE (IoC)
-- **Frontend**: Angular 20, TypeScript, Font Awesome 6.7.2 Pro
+- **Frontend**: Angular 21, TypeScript, Font Awesome 6.7.2 Pro
 - **Integration**: JWebMP Page Configurators, ServiceLoader SPI
 - **Rendering**: SVG via angular-fontawesome or CSS Web Fonts
 - **Module System**: JPMS with explicit dependencies
@@ -465,7 +465,7 @@ Contributions are welcome! Please follow these guidelines:
 
 | Aspect | Status |
 |--------|--------|
-| **Version** | 6.7.2 / 2.0.0-SNAPSHOT |
+| **Version** | 6.7.2 / 2.0.0-RC1 |
 | **Icons** | 10,000+ Pro |
 | **Java** | 25 LTS (required) |
 | **Build** | Passing |
