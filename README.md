@@ -30,7 +30,7 @@ Built on [Font Awesome 6 Pro](https://fontawesome.com/) · [Angular FontAwesome]
 <dependency>
   <groupId>com.jwebmp.plugins</groupId>
   <artifactId>font-awesome-pro</artifactId>
-  <version>2.0.0-RC7</version>
+  <version>2.0.0-RC8</version>
 </dependency>
 ```
 
@@ -38,7 +38,7 @@ Built on [Font Awesome 6 Pro](https://fontawesome.com/) · [Angular FontAwesome]
 <summary>Gradle (Kotlin DSL)</summary>
 
 ```kotlin
-implementation("com.jwebmp.plugins:font-awesome-pro:2.0.0-RC7")
+implementation("com.jwebmp.plugins:font-awesome-pro:2.0.0-RC8")
 ```
 </details>
 
@@ -465,7 +465,7 @@ Contributions are welcome! Please follow these guidelines:
 
 | Aspect | Status |
 |--------|--------|
-| **Version** | 6.7.2 / 2.0.0-RC7 |
+| **Version** | 6.7.2 / 2.0.0-RC8 |
 | **Icons** | 10,000+ Pro |
 | **Java** | 25 LTS (required) |
 | **Build** | Passing |
