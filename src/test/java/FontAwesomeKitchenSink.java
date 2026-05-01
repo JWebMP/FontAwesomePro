@@ -37,17 +37,17 @@ public class FontAwesomeKitchenSink extends DivSimple<FontAwesomeKitchenSink>
                        .fixedWidth());
 
 
-        add(new FontAwesomeLayers()
+        add(new FontAwesomeLayers<>()
                 .addIcon(FontAwesome.icon(FontAwesomeBrandIcons.twitch, FontAwesomeStyles.Brand))
-                .addText(new FontAwesomeLayerText().setText("Yo")
+                .addText(new FontAwesomeLayerText<>().setText("Yo")
                                                    .transform(FontAwesomeTransforms.Shrink_4))
         );
 
-        add(new FontAwesomeLayers()
+        add(new FontAwesomeLayers<>()
                 .fixedWidth()
                 .setSize(FontAwesomeSizes.Lg)
                 .addIcon(FontAwesome.icon(FontAwesomeBrandIcons.twitch, FontAwesomeStyles.Brand))
-                .addCounter(new FontAwesomeLayerCounter().setText("99+")
+                .addCounter(new FontAwesomeLayerCounter<>().setText("99+")
                 )
         );
 
