@@ -30,7 +30,7 @@ Built on [Font Awesome 6 Pro](https://fontawesome.com/) · [Angular FontAwesome]
 <dependency>
   <groupId>com.jwebmp.plugins</groupId>
   <artifactId>font-awesome-pro</artifactId>
-  <version>2.0.0-SNAPSHOT</version>
+  <version>2.0.3-SNAPSHOT</version>
 </dependency>
 ```
 
