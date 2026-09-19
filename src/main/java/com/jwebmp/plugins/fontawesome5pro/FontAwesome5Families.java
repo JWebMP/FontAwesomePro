@@ -84,6 +84,10 @@ public enum FontAwesome5Families implements IFontAwesomeFamilies<FontAwesome5Fam
      * Whiteboard family (Pro Plus). Styles: semibold.
      */
     Whiteboard("whiteboard", "whiteboard"),
+    /**
+     * Whiteboard family (Pro Plus). Styles: semibold.
+     */
+    Vellum("vellum", "vellum"),
     ;
 
     /**
