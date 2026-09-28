@@ -85,9 +85,13 @@ public enum FontAwesome5Families implements IFontAwesomeFamilies<FontAwesome5Fam
      */
     Whiteboard("whiteboard", "whiteboard"),
     /**
-     * Whiteboard family (Pro Plus). Styles: semibold.
+     * Vellum family (Pro Plus). Styles: solid.
      */
     Vellum("vellum", "vellum"),
+    Mosaic("mosaic", "mosaic"),
+    Pixel("pixel", "pixel"),
+    SlabDuo("slab-duo", "slab-duo"),
+    SlabPressDuo("slab-press-duo", "slab-press-duo"),
     ;
 
     /**

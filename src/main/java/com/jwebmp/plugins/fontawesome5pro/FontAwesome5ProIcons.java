@@ -4,7 +4,7 @@ import com.jwebmp.plugins.fontawesome5.*;
 
 import static com.guicedee.modules.services.jsonrepresentation.json.StaticStrings.*;
 
-public enum FontAwesome5ProIcons implements IFontAwesomeIcon
+public enum FontAwesome5ProIcons implements IFontAwesomeIcon, FontAwesome5ProAdditionalIcons
 {
 	$0,
 	$1,

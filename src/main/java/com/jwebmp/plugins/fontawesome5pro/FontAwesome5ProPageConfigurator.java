@@ -46,7 +46,7 @@ import java.util.Set;
         pluginDescription = "Font Awesome Pro icon families for JWebMP. " +
                 "Supports Kit-based cloud delivery or selective npm package installation per icon family.",
         pluginUniqueName = "jwebmp-fontawesome-pro",
-        pluginVersion = "7.2.0",
+        pluginVersion = "7.3.1",
         pluginCategories = "fonts, icons, ui, framework",
         pluginSubtitle = "Font Awesome Pro icon support with per-family dependency management.",
         pluginSourceUrl = "https://github.com/GedMarc/JWebMP-FontAwesome5Pro",
@@ -57,7 +57,7 @@ import java.util.Set;
 
 public class FontAwesome5ProPageConfigurator implements IPageConfigurator<FontAwesome5ProPageConfigurator>
 {
-    private static final String FA_VERSION = "^7.2.0";
+    private static final String FA_VERSION = "^7.3.1";
 
     /**
      * Maps each IconFamily to its npm package name and short alias.
@@ -95,6 +95,12 @@ public class FontAwesome5ProPageConfigurator implements IPageConfigurator<FontAw
         FAMILY_PACKAGES.put(IconFamily.Utility_Duo,    new String[]{"@fortawesome/utility-duo-semibold-svg-icons",    "fontawesome-utility-duo-semibold"});
         FAMILY_PACKAGES.put(IconFamily.Utility_Fill,   new String[]{"@fortawesome/utility-fill-semibold-svg-icons",   "fontawesome-utility-fill-semibold"});
         FAMILY_PACKAGES.put(IconFamily.Whiteboard,     new String[]{"@fortawesome/whiteboard-semibold-svg-icons",     "fontawesome-whiteboard-semibold"});
+
+        FAMILY_PACKAGES.put(IconFamily.Vellum, new String[]{"@fortawesome/vellum-solid-svg-icons", "fontawesome-vellum-solid"});
+        FAMILY_PACKAGES.put(IconFamily.Mosaic, new String[]{"@fortawesome/mosaic-solid-svg-icons", "fontawesome-mosaic-solid"});
+        FAMILY_PACKAGES.put(IconFamily.Pixel, new String[]{"@fortawesome/pixel-regular-svg-icons", "fontawesome-pixel-regular"});
+        FAMILY_PACKAGES.put(IconFamily.Slab_Duo, new String[]{"@fortawesome/slab-duo-regular-svg-icons", "fontawesome-slab-duo-regular"});
+        FAMILY_PACKAGES.put(IconFamily.Slab_Press_Duo, new String[]{"@fortawesome/slab-press-duo-regular-svg-icons", "fontawesome-slab-press-duo-regular"});
 
         // Kit and Kit_Custom don't have npm packages — they're cloud-delivered via Kit script
     }

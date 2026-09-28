@@ -18,6 +18,79 @@ Built on [Font Awesome 6 Pro](https://fontawesome.com/) · [Angular FontAwesome]
 
 **Version: 6.7.2** — Font Awesome Pro integration with additional icon styles and 10,000+ premium icons.
 
+## Family-specific icon catalogs (Font Awesome 7.3.1)
+
+Browse [all Vellum icons](https://fontawesome.com/icons/packs/vellum) or
+[all packs and styles](https://docs.fontawesome.com/web/dig-deeper/styles).
+The new enums contain canonical names verified against Font Awesome's public
+GraphQL release metadata. Pro+ packs have different selections, so the legacy
+`FontAwesome5ProIcons` union cannot establish that an icon exists in a given pack.
+The legacy enum retains its constants and exposes 673 additional Pro names via
+`FontAwesome5ProAdditionalIcons`. For example,
+`FontAwesome5ProIcons.aeropress` is a `FontAwesomeClassicIcons` value. This
+preserves old compiled field references and enum ordinals. New inherited names
+are absent from `FontAwesome5ProIcons.values()` and `valueOf()`; use the
+family-specific enums when enumerating current icons or switching on them.
+
+All enums below are in `com.jwebmp.plugins.fontawesome5pro` and implement
+`IFontAwesomeFamilyIcon`, which extends `IFontAwesomeIcon`:
+
+| Enum | Icons | Supported styles |
+| --- | ---: | --- |
+| `FontAwesomeClassicIcons` | 3781 | Solid, Regular, Light, Thin |
+| `FontAwesomeDuotoneIcons` | 3781 | Solid, Regular, Light, Thin |
+| `FontAwesomeSharpIcons` | 3781 | Solid, Regular, Light, Thin |
+| `FontAwesomeSharpDuotoneIcons` | 3781 | Solid, Regular, Light, Thin |
+| `FontAwesomeChiselIcons` | 209 | Regular |
+| `FontAwesomeEtchIcons` | 208 | Solid |
+| `FontAwesomeGraphiteIcons` | 213 | Thin |
+| `FontAwesomeJellyIcons`, `FontAwesomeJellyDuoIcons`, `FontAwesomeJellyFillIcons` | 237 each | Regular |
+| `FontAwesomeMosaicIcons` | 210 | Solid |
+| `FontAwesomeNotdogIcons`, `FontAwesomeNotdogDuoIcons` | 217 each | Solid |
+| `FontAwesomePixelIcons` | 244 | Regular |
+| `FontAwesomeSlabIcons`, `FontAwesomeSlabDuoIcons`, `FontAwesomeSlabPressIcons`, `FontAwesomeSlabPressDuoIcons` | 209 each | Regular |
+| `FontAwesomeThumbprintIcons` | 204 | Light |
+| `FontAwesomeUtilityIcons`, `FontAwesomeUtilityDuoIcons`, `FontAwesomeUtilityFillIcons` | 338 each | Semibold |
+| `FontAwesomeVellumIcons` | 240 | Solid |
+| `FontAwesomeWhiteboardIcons` | 337 | Semibold |
+
+```java
+var icon = FontAwesomeVellumIcons.address_card;
+icon.toAngularIconAttributeName(); // "address-card" (SVG / wa-icon name)
+icon.toAngularIcon();              // "faAddressCard" (Angular import)
+icon.getFamily();                  // IconFamily.Vellum
+icon.getVariant();                 // IconVariant.Solid
+icon.requireVariant(IconVariant.Regular); // throws: unavailable in Vellum
+
+// With the web-awesome-pro plugin, family and default variant are automatic:
+new WaIconFA<>(FontAwesomeVellumIcons.address_card);
+new WaIconFA<>(FontAwesomeSharpIcons.house, IconVariant.Thin);
+
+// When using WaIcon directly or a custom wrapper, pass the metadata explicitly:
+new WaIcon<>(icon.toAngularIconAttributeName(), icon.getFamily().toString(), icon.getVariant());
+```
+
+These catalogs guarantee name/style membership in **7.3.1**, not asset delivery.
+Your Kit or self-hosted assets must include the selected pack and version, with
+the appropriate Pro/Pro+ entitlement. Legacy APIs and explicit string overrides
+remain unrestricted. Classic, Duotone, Sharp and Sharp Duotone default to Solid.
+The free plugin supplies exact `FontAwesomeFreeSolidIcons`,
+`FontAwesomeFreeRegularIcons` and `FontAwesomeFreeBrandsIcons` catalogs as well
+as the updated legacy free enums. All typed catalogs share
+`IFontAwesomeCatalogIcon`; `IFontAwesomeFamilyIcon` is the Pro specialization.
+
+Regenerate from the public API (Python 3, no token needed), or verify offline:
+
+```shell
+python scripts/generate-icon-enums.py --version 7.3.1
+python scripts/generate-icon-enums.py --catalog scripts/icon-catalog.json --check
+```
+
+The checked-in snapshot contains only names and availability metadata, no SVGs.
+Generation rejects differing style memberships within a family, rather than
+silently claiming every icon exists in every style. Aliases are omitted; numeric
+names use the existing `$` Java convention, stripped from rendered names.
+
 ## Installation
 
 ### Prerequisites
